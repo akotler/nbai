@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NBAI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/table.css')}}">
+	  <link rel="stylesheet" href="{{url_for('static', filename='css/grayscale.css')}}">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">NBAI</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#top-players-section">Top Players</a>
+            </li>
+            <li>
+              <a class="nav-link js-scroll-trigger" href="#predictions-section">Predictions</a>
+            </li>
+            <li>
+              <a class="nav-link js-scroll-trigger" href="#links-section">Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">NBAI</h1>
+              <p class="intro-text">Your home for accurate NBA player Fantasy scores.
+                </p>
+              <p class="text-center">We use our prediction algorithm to ouput a more accurate fantasy score than ESPN's</p>
+              <p class="text-center">Predictions based on the information from
+              <a href="http://stats.nba.com/">Stats.NBA.com</a>
+              </p>
+              <a href="#top-players-section" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="top-players-section" class="content-section text-center">
+      <div class="container">
+        <div class="row potw">
+          <div class="col-lg-10 mx-auto">
+            <h1>Top Players This Week</h1>
+          </div>
+        </div>
+
+        <div class="row players-of-the-week">
+          <div class="col-lg-4 mx-auto">
+            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203507.png" alt="potw1">
+            <div style="background-color: #5bbfaa; width: 90%; text-align:center; margin: 10px  auto; ">
+              <h4 style="color:white; padding: 5px; margin-bottom:0px;">Giannis Antetokounmpo</h4>
+              <p style="line-height: 18px; padding: 15px; font-size: 16px; margin-bottom: 10px;">Antetokounmpo exploded for 44 points (17-23 FG, 1-4 3Pt, 9-13 FT), eight rebounds, four assists, two steals, and one block in 39 minutes during Saturday's 113-110 win over the Trail Blazers.</p>
+              <!-- <p style="color:white; padding-bottom:10px">Undervalued by X</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img src="http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202326.png" alt="potw2">
+            <div style="background-color: #5bbfaa; width: 90%; text-align:center; margin: 10px  auto; ">
+              <h4 style="color:white; padding: 5px; margin-bottom:0px;">DeMarcus Cousins</h4>
+              <p style="line-height: 18px; padding: 15px; font-size: 16px; margin-bottom: 10px;">Cousins tallied 22 points (8-17 FG, 1-6 3Pt, 5-8 FT), 11 rebounds, eight assists and two blocks in Sunday's 119-112 win over the Lakers.</p>
+              <!-- <p style="color:white; padding-bottom:10px;">Undervalued by Y</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img src="http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2544.png" alt="potw3">
+            <div style="background-color: #5bbfaa; width: 90%; text-align:center; margin: 10px auto; ">
+              <h4 style="color:white; padding: 5px; margin-bottom:0px;">LeBron James</h4>
+              <p style="line-height: 18px; padding: 15px; font-size: 16px; margin-bottom: 10px;">James tallied 24 points (10-16 FG, 2-4 3Pt, 2-2 FT), eight assists, five rebounds, one steal and one block across 37 minutes during Friday's 116-97 win over the Bucks.</p>
+              <!-- <p style="color:white; padding-bottom:10px">Undervalued by Z</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="row" id="predictions-section" style="padding-top: 50px;">
+          <div class="col-lg-10 mx-auto">
+            <h1 style ="margin-bottom: 5px;">Daily Player Fantasy Score Predictions</h1>
+            <h4 style="color: #5bbfaa;">Players in games today:</h3>
+            <div class="prediction-table-outer-container">
+              <div id="prediction-table-inner-container">
+                <div class="row">
+                  <div id ="table-filter" class="col-lg-3">
+
+                    <h2>Search Filter</h2>
+                    <p>Search on players based on name, team, position.</p>
+
+                    <h3>Name:</h3>
+                    <input type="text" id="search" style="width:200px;" placeholder="Player Name" onkeyup="newFilterFunction({{name_index}}, {{team_index}}, {{position_index}}, {{value_index}})">
+
+                    <h3>Position:</h3>
+                    <select onchange = "newFilterFunction({{name_index}}, {{team_index}}, {{position_index}}, {{value_index}})" name="position" id="position_dropdown" style="width:200px;">
+                      <option value="ALL" selected>ALL</option>
+                      <option value="PG">PG</option>
+                      <option value="SG">SG</option>
+                      <option value="SF">SF</option>
+                      <option value="PF">PF</option>
+                      <option value="C">C</option>
+                    </select>
+
+                    <h3>Team:</h3>
+                    <select onchange = "newFilterFunction({{name_index}}, {{team_index}}, {{position_index}}, {{value_index}})" name="team" id="team_dropdown" style="width:200px;">
+                      <option value="ALL" selected>ALL</option>
+                      {% for datum in team_list %}
+                      <option value={{datum}}>{{datum}}</option>
+                      {% endfor %}
+                    </select>
+
+                    <h3>Value:</h3>
+                    <select onchange = "newFilterFunction({{name_index}}, {{team_index}}, {{position_index}}, {{value_index}})" name="value" id="value_dropdown" style="width:200px;">
+                      <option value="ALL" selected>ALL</option>
+                      <option value="Undervalued">Undervalued</option>
+                      <option value="Overvalued">Overvalued</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-9">
+                    <table id="table" class="container text-center">
+
+                      <tr id="top-row">
+                      {% for headers in header_list %}
+                        <th onclick="sortTable({{loop.index0}})">{{headers}}</th>
+                      {% endfor %}
+                      </tr>
+
+                      {% for player_list in website_table%}
+                      <tr>
+                        {% for datum in player_list%}
+                        {% if datum == 'Overvalued'%}
+                        <td class="overvalued">{{datum}}</td>
+                        {% elif datum == 'Undervalued'%}
+                        <td class="undervalued">{{datum}}</td>
+                        {% else %}
+                        <td>{{datum}}</td>
+                        {% endif %}
+                        {% endfor %}
+                      </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links-section" class="content-section text-center">
+      <div class="col-lg-10 mx-auto">
+        <div class="links-container">
+          <h1>Links</h1>
+          <a href="https://github.com/RyanDanielOMara/nbai/issues">Post an Issue</a>
+          <br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9EoEwwwSqtxHE_BA_h8LSxY246kwrJr8YCwzWKMHj3CZ0iQ/viewform?usp=sf_link">Give Feedback</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; NBAI</p>
+      </div>
+    </footer>
+
+        <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/popper/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+
+    <!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    -->
+
+    <!-- Custom scripts for this template -->
+	<script src="{{url_for('static', filename='js/grayscale.js')}}"></script>
+	<script src="{{url_for('static', filename='js/table.js')}}"></script>
+
+  </body>
+
+</html>
