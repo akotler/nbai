@@ -21,6 +21,15 @@ Next, to backfill your database, run the backfill.py script.
 `./src/backfill.py`
 This will pull stats from every season from 2007 until now.
 
+## Possible error messages: 
+- nba_py not found/installed
+- - run `env/bin/python pip install nba_py` from the root project directory
+- mongo connection error
+- - Ensure that mongodb is installed
+- - - `sudo apt-get install mongodb-org-server` 
+- - Start the Mongo service
+- - - `sudo service mongod start`
+
 Once you have this, you're ready to start hosting web traffic.
 
 ## Starting server
