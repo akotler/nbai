@@ -43,6 +43,7 @@ Your environment should be all set.  To verify:
 env/bin/python
 >> import mongokit
 >> import flask
+>> import nba_py
 ```
 If you get no errors, your environment is all set!
 
@@ -73,7 +74,7 @@ Startup MongoDB (you will have to do this everytime you restart your system).
 Backfill the Database.
 * Basic backfill
     * `./src/backfill.py`
-* Extensive backfill (add missing player bios, update all player bios - takes longer)
+* Extensive backfill (add missing player bios, update all player bios - takes up to 15 minutes longer)
     * `./src/backfill.py -a -u`
 
 Your server and database should now be fully setup!
